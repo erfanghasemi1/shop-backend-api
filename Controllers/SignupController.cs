@@ -18,8 +18,10 @@ namespace ShopProject.Controllers
         }
 
         [HttpPost("signup")]
-        public async Task<IActionResult> Singup([FromBody] SignupRequest request)
+        public async Task Singup()
         {
+            Console.WriteLine("we are in controller");
+            var request = HttpContext.Items["SignupRequest"] as SignupRequest;
             User user = new User
             {
                 Username = request.Username,
@@ -33,7 +35,6 @@ namespace ShopProject.Controllers
 
             HttpContext.Items["UserId"] = UserId;
 
-            return Ok(new { result = "user created successfully." });
         }
     }
 }

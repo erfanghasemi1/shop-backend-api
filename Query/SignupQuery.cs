@@ -23,7 +23,7 @@ namespace ShopProject.Query
 
                 connection.Execute("use shop");
 
-                string query = @"select Id from Users where Role=@r and (Username=@u or Email=@e)";
+                string query = @"select Id from Users where Role = @r AND (Username = @u OR Email = @e)";
 
                 int? id = await connection.QueryFirstOrDefaultAsync<int?>(query, new
                 { r = req.Role, u = req.Username, e = req.Email });

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ShopProject.Data;
+using ShopProject.Middleware;
 using ShopProject.Query;
 using ShopProject.Utils;
 
@@ -28,6 +29,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+
 app.UseHttpsRedirection();
 
 app.UseRouting();
@@ -37,5 +39,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseMiddleware<SignupMiddleware>();
 
 app.Run();

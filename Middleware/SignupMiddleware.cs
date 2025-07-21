@@ -14,11 +14,11 @@ namespace ShopProject.Middleware
         private readonly JWTGenerator _jwtGenerator;
 
 
-        public SignupMiddleware(RequestDelegate next, IConfiguration configuration , SignupQuery query , JWTGenerator jWTGenerator)
+        public SignupMiddleware(RequestDelegate next, IConfiguration configuration , JWTGenerator jWTGenerator)
         {
             _next = next;
             _configuration = configuration;
-            _query = query;
+            _query = new SignupQuery(_configuration);
             _jwtGenerator = jWTGenerator;
         }
 
@@ -70,16 +70,20 @@ namespace ShopProject.Middleware
                     });
                     return;
                 }
+                context.Items["SignupRequest"] = request;
 
                 await _next(context);
 
                 string UserId = context.Items["UserId"]?.ToString();
 
+                // debugging 
+                Console.WriteLine($"userid : {UserId}");
+
                 var token = _jwtGenerator.GenerateToken(UserId,request.Username,request.Role);
 
                 context.Response.StatusCode = 200;
 
-                await context.Response.WriteAsJsonAsync(new { Token = token });
+                await context.Response.WriteAsJsonAsync(new { message = "the user added successfully",Token = token });
 
             }
 

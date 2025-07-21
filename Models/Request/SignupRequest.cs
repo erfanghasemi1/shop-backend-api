@@ -19,7 +19,7 @@ namespace ShopProject.Models.Request
 
 
         [Required(ErrorMessage ="role cannot be empty!")]
-        [RegularExpression("^(Seller|Buyer)$",ErrorMessage ="role must be either Seller or Buyer!")]
+        [RegularExpression("^(Seller|Customer)$", ErrorMessage ="role must be either Seller or Customer!")]
         public string Role { get; set; }
 
     }
