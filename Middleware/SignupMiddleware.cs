@@ -76,9 +76,6 @@ namespace ShopProject.Middleware
 
                 string UserId = context.Items["UserId"]?.ToString();
 
-                // debugging 
-                Console.WriteLine($"userid : {UserId}");
-
                 var token = _jwtGenerator.GenerateToken(UserId,request.Username,request.Role);
 
                 context.Response.StatusCode = 200;

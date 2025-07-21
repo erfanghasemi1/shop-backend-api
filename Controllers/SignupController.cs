@@ -20,7 +20,6 @@ namespace ShopProject.Controllers
         [HttpPost("signup")]
         public async Task Singup()
         {
-            Console.WriteLine("we are in controller");
             var request = HttpContext.Items["SignupRequest"] as SignupRequest;
             User user = new User
             {
