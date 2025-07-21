@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ShopProject.Data;
+using ShopProject.Query;
+using ShopProject.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,12 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseMySql(ConnectionString, ServerVersion.AutoDetect(ConnectionString));
 });
 
+builder.Services.AddSingleton<AES>();
+
+builder.Services.AddScoped<SignupQuery>();
+
+builder.Services.AddSingleton<JWTGenerator>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -21,6 +29,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
