@@ -41,5 +41,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseMiddleware<SignupMiddleware>();
+app.UseMiddleware<LoginMiddleware>();
 
 app.Run();

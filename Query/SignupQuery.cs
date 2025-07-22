@@ -19,9 +19,7 @@ namespace ShopProject.Query
         {
             using (var connection = new MySqlConnection(_connectionString))
             {
-                connection.Open();
-
-                connection.Execute("use shop");
+                await connection.OpenAsync();
 
                 string query = @"select Id from Users where Role = @r AND (Username = @u OR Email = @e)";
 

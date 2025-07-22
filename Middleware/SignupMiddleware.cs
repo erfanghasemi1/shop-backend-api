@@ -9,7 +9,6 @@ namespace ShopProject.Middleware
     public class SignupMiddleware
     {
         private readonly RequestDelegate _next;
-        private readonly IConfiguration _configuration;
         private readonly SignupQuery _query;
         private readonly JWTGenerator _jwtGenerator;
 
@@ -17,8 +16,7 @@ namespace ShopProject.Middleware
         public SignupMiddleware(RequestDelegate next, IConfiguration configuration , JWTGenerator jWTGenerator)
         {
             _next = next;
-            _configuration = configuration;
-            _query = new SignupQuery(_configuration);
+            _query = new SignupQuery(configuration);
             _jwtGenerator = jWTGenerator;
         }
 
@@ -27,7 +25,7 @@ namespace ShopProject.Middleware
             if (context.Request.Path.Equals("/signup", StringComparison.OrdinalIgnoreCase) &&
                 (context.Request.Method.Equals("POST",StringComparison.OrdinalIgnoreCase)))
             {
-                // reading the request body
+                // reading the request body (Json file)
                 context.Request.EnableBuffering();
 
                 var reader = new StreamReader(context.Request.Body , leaveOpen: true);
@@ -66,7 +64,7 @@ namespace ShopProject.Middleware
                     context.Response.StatusCode = 409;
                     await context.Response.WriteAsJsonAsync(new
                     {
-                        Errors = "you already singup . try to login "
+                        Errors = "the username or email exists. you may already signed up  ; try to login."
                     });
                     return;
                 }
@@ -74,6 +72,7 @@ namespace ShopProject.Middleware
 
                 await _next(context);
 
+                // give a JWT to the authenticated user
                 string UserId = context.Items["UserId"]?.ToString();
 
                 var token = _jwtGenerator.GenerateToken(UserId,request.Username,request.Role);
