@@ -1,4 +1,7 @@
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using ShopProject.Data;
 using ShopProject.Middleware;
 using ShopProject.Query;
@@ -16,11 +19,41 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseMySql(ConnectionString, ServerVersion.AutoDetect(ConnectionString));
 });
 
+
+// configuring JWT Bearer to use it for authentication
+
+var JwtConfig = builder.Configuration.GetSection("Jwt");
+var Key = Encoding.UTF8.GetBytes(JwtConfig["Key"]);
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateIssuerSigningKey = true,
+        ValidateLifetime = true,
+
+        ValidIssuer = JwtConfig["Issuer"],
+        ValidAudience = JwtConfig["Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Key)
+    };
+});
+
+builder.Services.AddAuthorization();
+
 builder.Services.AddSingleton<AES>();
 
 builder.Services.AddScoped<SignupQuery>();
 
 builder.Services.AddSingleton<JWTGenerator>();
+
+builder.Services.AddScoped<ProductQuery>();
 
 var app = builder.Build();
 
@@ -42,5 +75,19 @@ app.MapControllers();
 
 app.UseMiddleware<SignupMiddleware>();
 app.UseMiddleware<LoginMiddleware>();
+app.UseMiddleware<UploadProductMiddleware>();
 
 app.Run();
+
+
+/*
+   "SellerId": 1,
+  "Name": "Cat Food",
+  "Descriptiob": "this is cat food .",
+  "Price" : 135,
+  "Stock" : 5,
+  "CreatedAt" : "2025-07-22T01:23:45"
+
+
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxOSIsInVuaXF1ZV9uYW1lIjoiam9obl9kb2UiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTZWxsZXIiLCJqdGkiOiJkOGFmYWFiNS1hMjI2LTQzMWEtYjI2My03MDhkMDNlYzQxYjUiLCJleHAiOjE3NTMzMjEyNTMsImlzcyI6IlNob3BQcm9qZWN0IiwiYXVkIjoiU2hvcFByb2plY3RVc2VycyJ9.X-qDNXkdSauM37qHk8tR4E-JhR7Ll028DtrhiBRDjw4"
+ */

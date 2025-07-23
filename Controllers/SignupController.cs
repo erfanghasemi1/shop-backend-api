@@ -6,6 +6,7 @@ using ShopProject.Utils;
 
 namespace ShopProject.Controllers
 {
+    [ApiController]
     public class SignupController : Controller
     {
         private readonly AES _aes;
