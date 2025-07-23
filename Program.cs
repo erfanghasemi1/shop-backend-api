@@ -78,16 +78,3 @@ app.UseMiddleware<LoginMiddleware>();
 app.UseMiddleware<UploadProductMiddleware>();
 
 app.Run();
-
-
-/*
-   "SellerId": 1,
-  "Name": "Cat Food",
-  "Descriptiob": "this is cat food .",
-  "Price" : 135,
-  "Stock" : 5,
-  "CreatedAt" : "2025-07-22T01:23:45"
-
-
-"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxOSIsInVuaXF1ZV9uYW1lIjoiam9obl9kb2UiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTZWxsZXIiLCJqdGkiOiJkOGFmYWFiNS1hMjI2LTQzMWEtYjI2My03MDhkMDNlYzQxYjUiLCJleHAiOjE3NTMzMjEyNTMsImlzcyI6IlNob3BQcm9qZWN0IiwiYXVkIjoiU2hvcFByb2plY3RVc2VycyJ9.X-qDNXkdSauM37qHk8tR4E-JhR7Ll028DtrhiBRDjw4"
- */
