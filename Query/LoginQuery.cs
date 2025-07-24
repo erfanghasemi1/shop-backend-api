@@ -13,7 +13,7 @@ namespace ShopProject.Query
             _connectionString = configuration.GetConnectionString("mysqlconnection");
         }
 
-        public async Task<LoginQueryData?> Login(LoginRequest req)
+        public async Task<LoginQueryData?> LoginAsync(LoginRequest req)
         {
             using (var connection = new MySqlConnection(_connectionString))
             {

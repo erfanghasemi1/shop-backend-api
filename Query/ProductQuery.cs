@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using MySqlConnector;
+using ShopProject.Models;
 using ShopProject.Models.Request;
 
 namespace ShopProject.Query
@@ -12,11 +13,13 @@ namespace ShopProject.Query
             _connectionString = configuration.GetConnectionString("mysqlconnection");
         }
 
-        public async Task AddProduct(UploadProduct Data)
+        //  add product to the database by Seller
+        public async Task AddProductAsync(UploadProduct Data)
         {
             using (var connection = new MySqlConnection(_connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
+
                 string query = @"insert into Products (SellerId , Name , Description , Price , Stock , CreatedAt)
                                 value (@si , @n , @d , @p , @s , @c)";
                 try
@@ -34,6 +37,27 @@ namespace ShopProject.Query
                 catch (Exception ex)
                 {
                     throw new Exception("insert the product failed!",ex);
+                }
+            }
+        }
+
+        //  retrieve products for the home page 
+        public async Task<List<Product>> GetHomepageProductAsync()
+        {
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                string query = @"select * from Products limit 10";
+
+                try
+                {
+                    IEnumerable<Product> results = await connection.QueryAsync<Product>(query);
+                    return results.ToList();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("retrieving Products from database failed!", ex);
                 }
             }
         }

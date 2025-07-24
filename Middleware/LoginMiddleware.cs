@@ -59,7 +59,7 @@ namespace ShopProject.Middleware
                 }
 
                 // check the user's password 
-                LoginQueryData? LQD = await _query.Login(request);
+                LoginQueryData? LQD = await _query.LoginAsync(request);
                 string? EncryptedPassword = LQD?.EncryptedPassword;
 
                 // check EncryptedPassword ( if it's null then calling _aes.Decrypt(EncryptedPassword) will make error!

@@ -34,9 +34,7 @@ namespace ShopProject.Query
         {
             using(var connection = new MySqlConnection(_connectionString))
             {
-                connection.Open();
-
-                connection.Execute("use shop");
+                await connection.OpenAsync();
 
                 string query = @"insert into Users (Username , Email , EncryptedPassword , Role , CreatedAt) 
                 value(@u,@e,@ep,@r,@ca);
