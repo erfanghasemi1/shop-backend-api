@@ -61,5 +61,27 @@ namespace ShopProject.Query
                 }
             }
         }
+
+        // retrieve data of a product by its Id
+
+        public async Task<Product?> GetProductByIdQueryAsync(int _id)
+        {
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                string query = @"select * from Products where Id = @id";
+
+                try
+                {
+                    Product? product = await connection.QueryFirstOrDefaultAsync<Product?>(query, new { id = _id });
+                    return product;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("getting product by its id from database failed!", ex);
+                }
+            }
+        }
     }
 }

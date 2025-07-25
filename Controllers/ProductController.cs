@@ -37,5 +37,17 @@ namespace ShopProject.Controllers
 
             return Ok(products);
         }
+
+        // retrieve data of a product by its Id
+
+        [HttpGet("home/{id}")]
+        public async Task<IActionResult> GetProductByIdAsync(int id)
+        {
+            Product? product = await productQuery.GetProductByIdQueryAsync(id);
+
+            if (product == null) return NotFound();
+
+            return Ok(product);
+        }
     }
 }
