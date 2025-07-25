@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\C#\\.net\\ShopProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\query\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\models\\request\\uploadproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:models\\request\\uploadproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\query\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\middleware\\loginmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\middleware\\uploadproductmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:middleware\\uploadproductmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\models\\request\\uploadproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:models\\request\\uploadproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -74,24 +74,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ProductQuery.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Query\\ProductQuery.cs",
               "RelativeDocumentMoniker": "Query\\ProductQuery.cs",
               "ToolTip": "E:\\C#\\.net\\ShopProject\\Query\\ProductQuery.cs",
               "RelativeToolTip": "Query\\ProductQuery.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwE0AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAkwG4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T21:54:09.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "UploadProduct.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Models\\Request\\UploadProduct.cs",
               "RelativeDocumentMoniker": "Models\\Request\\UploadProduct.cs",
@@ -99,11 +99,12 @@
               "RelativeToolTip": "Models\\Request\\UploadProduct.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAADwvxYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T21:34:59.753Z"
+              "WhenOpened": "2025-07-23T21:34:59.753Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UploadProductMiddleware.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Middleware\\UploadProductMiddleware.cs",
               "RelativeDocumentMoniker": "Middleware\\UploadProductMiddleware.cs",
@@ -121,7 +122,7 @@
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
               "ToolTip": "E:\\C#\\.net\\ShopProject\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAwwDAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAqwDcAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T13:11:11.084Z",
               "EditorCaption": ""
@@ -140,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginQuery.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Query\\LoginQuery.cs",
               "RelativeDocumentMoniker": "Query\\LoginQuery.cs",
@@ -152,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoginMiddleware.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Middleware\\LoginMiddleware.cs",
               "RelativeDocumentMoniker": "Middleware\\LoginMiddleware.cs",
@@ -248,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -260,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SignupQuery.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Query\\SignupQuery.cs",
               "RelativeDocumentMoniker": "Query\\SignupQuery.cs",

@@ -83,5 +83,38 @@ namespace ShopProject.Query
                 }
             }
         }
+
+        // retreive data of a product by searching
+
+        public async Task<List<Product>> SearchProductQueryAsync(List<string> Keywords)
+        {
+            string BaseQuery = "select * from Products where";
+
+            string WhereClause = string.Join(" or ",
+                                 Keywords.Select((k, i) => $"(Name like @k{i} or Description like @k{i})"));
+
+            string FinalQuery = BaseQuery + WhereClause + " limit 20";
+
+            var parameters = new DynamicParameters();
+
+            for (int i = 0; i < Keywords.Count; i++)
+                parameters.Add($"k{i}", $"%{Keywords[i]}%");
+
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+
+                await connection.OpenAsync();
+
+                try
+                {
+                    IEnumerable<Product> products = await connection.QueryAsync<Product>(FinalQuery,parameters);
+                    return products.ToList();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("searching for the product failed!" , ex);
+                }
+            }
+        }
     }
 }
