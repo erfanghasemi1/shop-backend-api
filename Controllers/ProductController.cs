@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ShopProject.Models;
 using ShopProject.Models.Request;
@@ -76,6 +77,23 @@ namespace ShopProject.Controllers
                 }).OrderByDescending(x => x.score).Select(x => x.product).ToList();
 
             return Ok(RankedResults);
+        }
+
+        [Authorize]
+        [HttpGet("product/rate")]
+        public async Task<IActionResult> RateProduct()
+        {
+            RateProduct? request = HttpContext.Items["data"] as RateProduct;
+
+            string? UserIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (!int.TryParse(UserIdClaim, out int UserId)) return BadRequest();
+
+            request.UserId = UserId;
+
+            await productQuery.InsertRatingAsync(request);
+
+            return Ok("Your comment added successfully.");
         }
     }
 }

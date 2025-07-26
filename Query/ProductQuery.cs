@@ -116,5 +116,34 @@ namespace ShopProject.Query
                 }
             }
         }
+
+        // inserting the ratings into the database 
+
+        public async Task InsertRatingAsync(RateProduct rateProduct)
+        {
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                try
+                {
+                    string query = @"insert into Ratings (ProductId , UserId , Stars , Comment)
+                                     value (@pid , @uid , @s , @c)";
+
+                    await connection.ExecuteAsync(query , new
+                    {
+                        pid = rateProduct.ProductId,
+                        uid = rateProduct.UserId , 
+                        s = rateProduct.stars ,
+                        c = rateProduct.comment 
+                    });
+                    return;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("inserting the rate failed!",ex);
+                }
+            }
+        }
     }
 }

@@ -76,5 +76,6 @@ app.MapControllers();
 app.UseMiddleware<SignupMiddleware>();
 app.UseMiddleware<LoginMiddleware>();
 app.UseMiddleware<UploadProductMiddleware>();
+app.UseMiddleware<RatingProductsMiddleware>();
 
 app.Run();
