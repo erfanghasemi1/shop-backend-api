@@ -35,5 +35,27 @@ namespace ShopProject.Query
                 }
             }
         }
+
+        public async Task<decimal> GetAmountAsync(int UserId)
+        {
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                string query = @"select Wallet from Users where Id = @id";
+                try
+                {
+                    decimal amount = await connection.QueryFirstOrDefaultAsync<decimal>(query, new
+                    {
+                        id = UserId
+                    });
+                    return amount;
+                }
+                catch
+                {
+                    return -1;
+                }
+            }
+        }
     }
 }

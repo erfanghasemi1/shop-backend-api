@@ -5,6 +5,9 @@ using ShopProject.Query;
 
 namespace ShopProject.Controllers
 {
+
+    [Authorize]
+    [Route("[controller]")]
     public class WalletController : Controller
     {
         private readonly WalletQuery walletQuery;
@@ -15,8 +18,7 @@ namespace ShopProject.Controllers
         }
 
 
-        [Authorize]
-        [HttpPost("wallet/deposit")]
+        [HttpPost("deposit")]
         public async Task<IActionResult> DepositWallet([FromBody] decimal? value)
         {
             if (value == null || value <= 0) return BadRequest();
@@ -28,6 +30,20 @@ namespace ShopProject.Controllers
             await walletQuery.DepositAsync(userId, value);
 
             return Ok("deposit is done successfully.");
+        }
+
+        [HttpGet("amount")]
+        public async Task<IActionResult> GetWalletAmount()
+        {
+            string? UserIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (!int.TryParse(UserIdClaim , out var UserId)) return BadRequest();
+
+            decimal amount = await walletQuery.GetAmountAsync(UserId);
+
+            if (amount == -1) return BadRequest("retrieving data from database failed!");
+
+            return Ok(amount.ToString());
         }
     }
 }

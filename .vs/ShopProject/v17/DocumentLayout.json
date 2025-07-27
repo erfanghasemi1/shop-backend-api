@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\C#\\.net\\ShopProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\query\\walletquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\walletquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\controllers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:controllers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\query\\walletquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\walletquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\middleware\\loginmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,30 +90,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WalletQuery.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Query\\WalletQuery.cs",
               "RelativeDocumentMoniker": "Query\\WalletQuery.cs",
               "ToolTip": "E:\\C#\\.net\\ShopProject\\Query\\WalletQuery.cs",
               "RelativeToolTip": "Query\\WalletQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwDcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T13:18:29.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "WalletController.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Controllers\\WalletController.cs",
               "RelativeDocumentMoniker": "Controllers\\WalletController.cs",
               "ToolTip": "E:\\C#\\.net\\ShopProject\\Controllers\\WalletController.cs",
               "RelativeToolTip": "Controllers\\WalletController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBUAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwC0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T13:13:45.878Z",
               "EditorCaption": ""
@@ -128,8 +128,7 @@
               "RelativeToolTip": "Middleware\\RatingProductsMiddleware.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAowBwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T13:37:05.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-26T13:37:05.523Z"
             },
             {
               "$type": "Document",
@@ -189,8 +188,7 @@
               "RelativeToolTip": "Controllers\\ProductController.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAqwF8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T13:11:11.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T13:11:11.084Z"
             },
             {
               "$type": "Document",
@@ -202,8 +200,7 @@
               "RelativeToolTip": "Models\\Request\\LoginQueryData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T22:23:50.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T22:23:50.407Z"
             },
             {
               "$type": "Document",
@@ -227,8 +224,7 @@
               "RelativeToolTip": "Middleware\\LoginMiddleware.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAA7wB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T20:44:14.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T20:44:14.655Z"
             },
             {
               "$type": "Document",
@@ -240,8 +236,7 @@
               "RelativeToolTip": "Models\\Request\\LoginRequest.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T20:36:12.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T20:36:12.9Z"
             },
             {
               "$type": "Document",
@@ -289,8 +284,7 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-21T11:27:00.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-21T11:27:00.501Z"
             },
             {
               "$type": "Document",
@@ -326,8 +320,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAuwDUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T10:44:29.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-21T10:44:29.089Z"
             },
             {
               "$type": "Document",
