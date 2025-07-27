@@ -51,6 +51,8 @@ builder.Services.AddSingleton<AES>();
 
 builder.Services.AddScoped<SignupQuery>();
 
+builder.Services.AddScoped<WalletQuery>();
+
 builder.Services.AddSingleton<JWTGenerator>();
 
 builder.Services.AddScoped<ProductQuery>();
