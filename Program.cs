@@ -53,6 +53,8 @@ builder.Services.AddScoped<SignupQuery>();
 
 builder.Services.AddScoped<WalletQuery>();
 
+builder.Services.AddScoped<OrderQuery>();
+
 builder.Services.AddSingleton<JWTGenerator>();
 
 builder.Services.AddScoped<ProductQuery>();
@@ -79,5 +81,6 @@ app.UseMiddleware<SignupMiddleware>();
 app.UseMiddleware<LoginMiddleware>();
 app.UseMiddleware<UploadProductMiddleware>();
 app.UseMiddleware<RatingProductsMiddleware>();
+app.UseMiddleware<OrderProductMiddleware>();
 
 app.Run();

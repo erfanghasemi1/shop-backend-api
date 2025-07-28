@@ -145,5 +145,45 @@ namespace ShopProject.Query
                 }
             }
         }
+
+        public async Task<int> GetProductstockAsycn(int? ProductId)
+        {
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                string query = @"select Stock from Products where Id = @id";
+
+                try
+                {
+                    int stock = connection.QueryFirstOrDefault<int>(query, new { id = ProductId });
+                    return stock;
+                }
+                catch
+                {
+                    return -1;
+                }
+            }
+        }
+
+        public async Task<decimal> GetProductPriceAsync(int? ProductId)
+        {
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                string query = @"select Price from Products where Id = @id";
+
+                try
+                {
+                    decimal price = await connection.QueryFirstOrDefaultAsync<decimal>(query, new { id = ProductId });
+                    return price;
+                }
+                catch
+                {
+                    return -1;
+                }
+            }
+        }
     }
 }

@@ -36,7 +36,7 @@ namespace ShopProject.Query
             }
         }
 
-        public async Task<decimal> GetAmountAsync(int UserId)
+        public async Task<decimal> GetAmountAsync(int? UserId)
         {
             using (var connection = new MySqlConnection(_connectionString))
             {

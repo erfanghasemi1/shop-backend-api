@@ -3,16 +3,52 @@
   "WorkspaceRootPath": "E:\\C#\\.net\\ShopProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\controllers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:controllers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\query\\orderquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\orderquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\models\\request\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:models\\request\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\middleware\\orderproductmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:middleware\\orderproductmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\query\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\query\\signupquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\signupquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\query\\walletquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\walletquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\middleware\\loginmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:middleware\\loginmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\controllers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:controllers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\models\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,24 +59,8 @@
       "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:models\\request\\loginquerydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\middleware\\ratingproductsmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:middleware\\ratingproductsmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\query\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\models\\request\\rateproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\loginquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\query\\signupquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:query\\signupquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|e:\\c#\\.net\\shopproject\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2DEB4A0-D859-438F-96E1-80812EF0CC65}|ShopProject.csproj|solutionrelative:controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -90,37 +106,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderQuery.cs",
+              "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Query\\OrderQuery.cs",
+              "RelativeDocumentMoniker": "Query\\OrderQuery.cs",
+              "ToolTip": "E:\\C#\\.net\\ShopProject\\Query\\OrderQuery.cs*",
+              "RelativeToolTip": "Query\\OrderQuery.cs*",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T21:26:04.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "E:\\C#\\.net\\ShopProject\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwCwAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T20:38:36.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OrderRequest.cs",
+              "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Models\\Request\\OrderRequest.cs",
+              "RelativeDocumentMoniker": "Models\\Request\\OrderRequest.cs",
+              "ToolTip": "E:\\C#\\.net\\ShopProject\\Models\\Request\\OrderRequest.cs",
+              "RelativeToolTip": "Models\\Request\\OrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T20:21:30.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderProductMiddleware.cs",
+              "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Middleware\\OrderProductMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\OrderProductMiddleware.cs",
+              "ToolTip": "E:\\C#\\.net\\ShopProject\\Middleware\\OrderProductMiddleware.cs",
+              "RelativeToolTip": "Middleware\\OrderProductMiddleware.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAACYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T20:16:17.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "WalletQuery.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Query\\WalletQuery.cs",
               "RelativeDocumentMoniker": "Query\\WalletQuery.cs",
-              "ToolTip": "E:\\C#\\.net\\ShopProject\\Query\\WalletQuery.cs*",
-              "RelativeToolTip": "Query\\WalletQuery.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwDcAAAAeAAAAAAAAAA==",
+              "ToolTip": "E:\\C#\\.net\\ShopProject\\Query\\WalletQuery.cs",
+              "RelativeToolTip": "Query\\WalletQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T13:18:29.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "WalletController.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Controllers\\WalletController.cs",
               "RelativeDocumentMoniker": "Controllers\\WalletController.cs",
               "ToolTip": "E:\\C#\\.net\\ShopProject\\Controllers\\WalletController.cs",
               "RelativeToolTip": "Controllers\\WalletController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowC0AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T13:13:45.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "RatingProductsMiddleware.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Middleware\\RatingProductsMiddleware.cs",
               "RelativeDocumentMoniker": "Middleware\\RatingProductsMiddleware.cs",
@@ -132,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "RateProduct.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Models\\Request\\RateProduct.cs",
               "RelativeDocumentMoniker": "Models\\Request\\RateProduct.cs",
@@ -144,19 +212,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "ProductQuery.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Query\\ProductQuery.cs",
               "RelativeDocumentMoniker": "Query\\ProductQuery.cs",
               "ToolTip": "E:\\C#\\.net\\ShopProject\\Query\\ProductQuery.cs",
               "RelativeToolTip": "Query\\ProductQuery.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAowI8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAwwKMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T21:54:09.052Z"
+              "WhenOpened": "2025-07-23T21:54:09.052Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "UploadProduct.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Models\\Request\\UploadProduct.cs",
               "RelativeDocumentMoniker": "Models\\Request\\UploadProduct.cs",
@@ -168,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "UploadProductMiddleware.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Middleware\\UploadProductMiddleware.cs",
               "RelativeDocumentMoniker": "Middleware\\UploadProductMiddleware.cs",
@@ -180,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "ProductController.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
@@ -188,11 +257,12 @@
               "RelativeToolTip": "Controllers\\ProductController.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAqwF8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T13:11:11.084Z"
+              "WhenOpened": "2025-07-23T13:11:11.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "LoginQueryData.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Models\\Request\\LoginQueryData.cs",
               "RelativeDocumentMoniker": "Models\\Request\\LoginQueryData.cs",
@@ -204,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "LoginQuery.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Query\\LoginQuery.cs",
               "RelativeDocumentMoniker": "Query\\LoginQuery.cs",
@@ -216,19 +286,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "LoginMiddleware.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Middleware\\LoginMiddleware.cs",
               "RelativeDocumentMoniker": "Middleware\\LoginMiddleware.cs",
               "ToolTip": "E:\\C#\\.net\\ShopProject\\Middleware\\LoginMiddleware.cs",
               "RelativeToolTip": "Middleware\\LoginMiddleware.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA7wB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T20:44:14.655Z"
+              "WhenOpened": "2025-07-22T20:44:14.655Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Models\\Request\\LoginRequest.cs",
               "RelativeDocumentMoniker": "Models\\Request\\LoginRequest.cs",
@@ -240,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "SignupRequest.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Models\\Request\\SignupRequest.cs",
               "RelativeDocumentMoniker": "Models\\Request\\SignupRequest.cs",
@@ -252,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "JWTGenerator.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Utils\\JWTGenerator.cs",
               "RelativeDocumentMoniker": "Utils\\JWTGenerator.cs",
@@ -264,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "SignupController.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Controllers\\SignupController.cs",
               "RelativeDocumentMoniker": "Controllers\\SignupController.cs",
@@ -276,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -284,11 +355,12 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-21T11:27:00.501Z"
+              "WhenOpened": "2025-07-21T11:27:00.501Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "AES.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Utils\\AES.cs",
               "RelativeDocumentMoniker": "Utils\\AES.cs",
@@ -300,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "SignupMiddleware.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Middleware\\SignupMiddleware.cs",
               "RelativeDocumentMoniker": "Middleware\\SignupMiddleware.cs",
@@ -312,19 +384,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\C#\\.net\\ShopProject\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAuwDUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAuwDcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T10:44:29.089Z"
+              "WhenOpened": "2025-07-21T10:44:29.089Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "SignupQuery.cs",
               "DocumentMoniker": "E:\\C#\\.net\\ShopProject\\Query\\SignupQuery.cs",
               "RelativeDocumentMoniker": "Query\\SignupQuery.cs",
@@ -332,7 +405,8 @@
               "RelativeToolTip": "Query\\SignupQuery.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwAsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T10:35:13.722Z"
+              "WhenOpened": "2025-07-21T10:35:13.722Z",
+              "EditorCaption": ""
             }
           ]
         }
