@@ -185,5 +185,31 @@ namespace ShopProject.Query
                 }
             }
         }
+
+        public async Task<bool> UpdateProductAsync(UpdateProductRequest request)
+        {
+            using (var connection = new MySqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                // secure the sql query from sql injection !!!
+
+                string[] fields = new[] { "Name", "Description", "Price", "Stock" };
+
+                if (!fields.Contains(request.field, StringComparer.OrdinalIgnoreCase))
+                    return false;
+
+                // now we can inject the request.field safely!
+                string query = $"update Products set {request.field} = @Update where Id = @id";
+
+                int AffectedRows = await connection.ExecuteAsync(query, new
+                {
+                    Update = request.Update,
+                    id = request.ProductId 
+                });
+
+                return AffectedRows > 0;
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Security.Claims;
+using System.Text.Json;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ShopProject.Models;
@@ -94,6 +95,29 @@ namespace ShopProject.Controllers
             await productQuery.InsertRatingAsync(request);
 
             return Ok("Your comment added successfully.");
+        }
+
+        [Authorize(Roles = "Seller")]
+        [HttpPost("product/update")]
+        public async Task<IActionResult> UpdateProduct()
+        {
+            UpdateProductRequest? request = HttpContext.Items["request"] as UpdateProductRequest;
+
+            if (request.Update is JsonElement element)
+            {
+                if (request.field == "Name" || request.field == "Description") request.Update = element.GetString();
+
+                else if(request.field == "Price") request.Update = element.GetDecimal();
+
+                else if(request.field == "Stock" ) request.Update = element.GetInt32();
+
+                else return BadRequest();
+            }
+
+            if (!await productQuery.UpdateProductAsync(request))
+                return StatusCode(500,new {message = "failed in updating database!"});
+
+            return Ok("Product Updated successfully.");
         }
     }
 }

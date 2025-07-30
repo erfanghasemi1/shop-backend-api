@@ -1,8 +1,6 @@
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using ShopProject.Data;
 using ShopProject.Middleware;
 using ShopProject.Query;
 using ShopProject.Utils;
@@ -11,14 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
-
-var ConnectionString = builder.Configuration.GetConnectionString("mysqlconnection");
-
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-options.UseMySql(ConnectionString, ServerVersion.AutoDetect(ConnectionString));
-});
-
 
 // configuring JWT Bearer to use it for authentication
 
@@ -55,9 +45,9 @@ builder.Services.AddScoped<WalletQuery>();
 
 builder.Services.AddScoped<OrderQuery>();
 
-builder.Services.AddSingleton<JWTGenerator>();
-
 builder.Services.AddScoped<ProductQuery>();
+
+builder.Services.AddSingleton<JWTGenerator>();
 
 var app = builder.Build();
 
@@ -82,5 +72,6 @@ app.UseMiddleware<LoginMiddleware>();
 app.UseMiddleware<UploadProductMiddleware>();
 app.UseMiddleware<RatingProductsMiddleware>();
 app.UseMiddleware<OrderProductMiddleware>();
+app.UseMiddleware<UpdateProductMiddleware>();
 
 app.Run();
