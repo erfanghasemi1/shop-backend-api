@@ -103,6 +103,20 @@ namespace ShopProject.Controllers
         {
             UpdateProductRequest? request = HttpContext.Items["request"] as UpdateProductRequest;
 
+            string? UserIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (!int.TryParse(UserIdClaim, out var UserId)) 
+                return StatusCode(500, new
+            {
+                Message = "issue in retreieving UserId!"
+            });
+
+            // check if the product belongs to this user 
+
+            int? SellerId = await productQuery.GetSellerIdOfProductAsync(request.ProductId);
+
+            if (SellerId == null || SellerId != UserId) return BadRequest("this is not your product!");
+
             if (request.Update is JsonElement element)
             {
                 if (request.field == "Name" || request.field == "Description") request.Update = element.GetString();

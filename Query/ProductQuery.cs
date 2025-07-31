@@ -211,5 +211,19 @@ namespace ShopProject.Query
                 return AffectedRows > 0;
             }
         }
+
+        public async Task<int?> GetSellerIdOfProductAsync(int? ProductId)
+        {
+            using (var conneciton = new MySqlConnection(_connectionString))
+            {
+                await conneciton.OpenAsync();
+
+                string query = "select SellerId from Products where Id = @id";
+
+                int? SellerId = await conneciton.QueryFirstOrDefaultAsync<int?>(query, new { id = ProductId });
+
+                return SellerId;
+            }
+        }
     }
 }
