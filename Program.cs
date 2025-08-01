@@ -10,6 +10,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
+// Uncomment the following if you're developing a frontend or hosting this API publicly:
+// builder.Services.AddCors(options =>
+// {
+//     options.AddPolicy("AllowAll", policy =>
+//     {
+//         policy.AllowAnyOrigin() // Allow any domain (including localhost:3000, etc.)
+//               .AllowAnyHeader()
+//               .AllowAnyMethod();
+//     });
+// });
+
+
 // configuring JWT Bearer to use it for authentication
 
 var JwtConfig = builder.Configuration.GetSection("Jwt");
@@ -60,6 +72,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseRouting();
+
+// Uncomment the following if you're developing a frontend or hosting this API publicly:
+// app.UseCors("AllowAll");
 
 app.UseAuthentication();
 

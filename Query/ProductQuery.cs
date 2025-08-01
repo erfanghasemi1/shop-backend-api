@@ -20,8 +20,8 @@ namespace ShopProject.Query
             {
                 await connection.OpenAsync();
 
-                string query = @"insert into Products (SellerId , Name , Description , Price , Stock , CreatedAt)
-                                value (@si , @n , @d , @p , @s , @c)";
+                string query = @"insert into Products (SellerId , Name , Description , Price , Stock )
+                                value (@si , @n , @d , @p , @s )";
                 try
                 {
                     await connection.ExecuteAsync(query, new
@@ -31,7 +31,6 @@ namespace ShopProject.Query
                         d = Data.Description,
                         p = Data.Price,
                         s = Data.Stock,
-                        c = Data.CreatedAt
                     });
                 }
                 catch (Exception ex)

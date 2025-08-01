@@ -37,6 +37,13 @@ namespace ShopProject.Middleware
                     PropertyNameCaseInsensitive = true
                 });
 
+                if (request == null)
+                {
+                    context.Response.StatusCode = 400;
+                    await context.Response.WriteAsJsonAsync(new { Message = "there is problem with your request!" });
+                    return;
+                }
+
                 // validating data 
                 var ValidationContext = new ValidationContext(request);
                 var result = new List<ValidationResult>();

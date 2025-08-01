@@ -17,7 +17,7 @@ namespace ShopProject.Middleware
         public async Task InvokeAsync(HttpContext context)
         {
             if (context.Request.Path.Equals("/product/rate", StringComparison.OrdinalIgnoreCase) &&
-               context.Request.Method.Equals("GET", StringComparison.OrdinalIgnoreCase))
+               context.Request.Method.Equals("POST", StringComparison.OrdinalIgnoreCase))
             {
                 // reading input data from Json file
                 context.Request.EnableBuffering();

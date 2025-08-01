@@ -28,6 +28,12 @@ namespace ShopProject.Middleware
                     PropertyNameCaseInsensitive = true
                 });
 
+                if (request == null)
+                {
+                    context.Response.StatusCode = 400;
+                    await context.Response.WriteAsJsonAsync(new { Message = "there is some problems with your request!" });
+                    return;
+                }
                 // validate data
                 var ValidationContext = new ValidationContext(request);
                 var results = new List<ValidationResult>();

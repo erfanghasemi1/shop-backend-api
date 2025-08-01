@@ -25,6 +25,13 @@ namespace ShopProject.Controllers
         {
             var Data = HttpContext.Items["ProductData"] as UploadProduct;
 
+            string? UserClaimId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (!int.TryParse(UserClaimId, out var SellerId) || Data == null)
+                return StatusCode(500, new { Message = "some server problems!" });
+
+            Data.SellerId = SellerId;
+
             await productQuery.AddProductAsync(Data);
 
             return Ok(new {message = "Product added successfuly"});
@@ -81,7 +88,7 @@ namespace ShopProject.Controllers
         }
 
         [Authorize]
-        [HttpGet("product/rate")]
+        [HttpPost("product/rate")]
         public async Task<IActionResult> RateProduct()
         {
             RateProduct? request = HttpContext.Items["data"] as RateProduct;

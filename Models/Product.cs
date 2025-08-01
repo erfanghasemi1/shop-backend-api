@@ -18,8 +18,4 @@ public partial class Product
     public int? Stock { get; set; }
 
     public DateTime? CreatedAt { get; set; }
-
-    public virtual ICollection<Rating> Ratings { get; set; } = new List<Rating>();
-
-    public virtual User? Seller { get; set; }
 }

@@ -4,7 +4,6 @@ namespace ShopProject.Models.Request
 {
     public class UploadProduct
     {
-        [Required]
         public int? SellerId { get; set; }
 
         [Required]
@@ -18,8 +17,5 @@ namespace ShopProject.Models.Request
 
         [Required]
         public int? Stock { get; set; }
-
-        [Required]
-        public DateTime? CreatedAt { get; set; }
     }
 }
