@@ -15,6 +15,10 @@ How to Run :
   },
   "ConnectionStrings": {
     "mysqlconnection": "Server=localhost;Database=shopdb;Uid=root;Pwd=yourpassword;"
+  },
+  "Encryption": {
+  "Key": "your-base64-encoded-key-here",
+  "IV": "your-base64-encoded-iv-here"
   }
 }
 
